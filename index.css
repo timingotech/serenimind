@@ -761,7 +761,9 @@ main .formsec{
   margin-left: 10px;
   text-align: center;
   }
-  
+  .games-image img{
+      border-radius:5px;
+  }
   .games-image {
   max-width: 100%;
   width: 300px;
