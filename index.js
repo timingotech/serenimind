@@ -38,3 +38,38 @@ const navigationBar = document.querySelector('.navigation-bar');
 hamburger.addEventListener('click', () => {
     navigationBar.classList.toggle('active');
 });
+
+
+
+
+
+
+
+const submitBtn = document.getElementById("submitBtn");
+const userInput = document.getElementById("userInput");
+const resp = document.getElementById("aiResponse");
+
+submitBtn.addEventListener("click", async () => {
+    const problem = userInput.value;
+  //response.textContent = aiResponse;
+
+  const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer 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' // Replace with your API key
+    },
+    body: JSON.stringify({
+      model: 'gpt-3.5-turbo', // The ChatGPT model
+      messages: [
+        { role: 'system', content: 'You are a helpful assistant.' },
+        { role: 'user', content: problem }
+      ]
+    })
+  })
+  const responseData = await response.json();
+
+  const aiResponse = responseData.choices[0].message.content;
+  resp.textContent=aiResponse
+
+})
