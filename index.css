@@ -913,6 +913,42 @@ main .formsec{
   font-size: 18px;
   margin-top: 30px;
 }
+/******support*****/
+/* Apply styles to the support container */
+.support-container {
+  max-width: 600px;
+  margin: 3cm auto 0;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Style the pay button with Paystack's colors */
+.pay-button {
+  background-color: #f36f21;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+  background-color: #d65c1e;
+}
+.payment-form label{
+  font-size: 17px;
+}
+#amount {
+  padding:10px 20px;
+  font-size: 17px;
+}
+
 /* Footer */
 footer {
   
@@ -970,6 +1006,7 @@ footer {
   .onlyshowinsmall{
     display: none;
   }
+
 /* Add this code to your index.css stylesheet */
 
 @media screen and (max-width: 765px) {
@@ -1185,5 +1222,9 @@ footer {
 .blog-list p{
   width:9cm ;
   margin-left: 3px;
+}
+.pay-button {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 }
