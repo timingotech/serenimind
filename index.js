@@ -57,7 +57,7 @@ submitBtn.addEventListener("click", async () => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer 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' // Replace with your API key
+      'Authorization': 'Bearer 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' // Replace with your API key
     },
     body: JSON.stringify({
       model: 'gpt-3.5-turbo', // The ChatGPT model
