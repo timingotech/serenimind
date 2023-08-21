@@ -1,3 +1,5 @@
+//Blog extension and change
+
 document.addEventListener("DOMContentLoaded", function () {
     const readMoreButtons = document.querySelectorAll(".read-more");
 
@@ -30,19 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-// Add this code to your index.js script or an external JS file
+// Hamburger
 
-const hamburger = document.querySelector('.hamburger-menu');
+const hamburger = document.querySelector('.hamburger');
 const navigationBar = document.querySelector('.navigation-bar');
 
 hamburger.addEventListener('click', () => {
     navigationBar.classList.toggle('active');
 });
-
-
-
-
-
+// Ai
 
 
 const submitBtn = document.getElementById("submitBtn");
@@ -57,7 +55,7 @@ submitBtn.addEventListener("click", async () => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer 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' // Replace with your API key
+      'Authorization': 'Bearer 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' // Replace with your API key
     },
     body: JSON.stringify({
       model: 'gpt-3.5-turbo', // The ChatGPT model
