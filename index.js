@@ -1,3 +1,5 @@
+//Blog extension and change
+
 document.addEventListener("DOMContentLoaded", function () {
     const readMoreButtons = document.querySelectorAll(".read-more");
 
@@ -30,17 +32,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-// Add this code to your index.js script or an external JS file
+// Hamburger
 
 const hamburger = document.querySelector('.hamburger-menu');
-const navigationBar = document.querySelector('.navigation-bar');
+const navigationBar = document.querySelector('.sidebar');
+const aside = document.querySelector('.aside');
+let closeSidebar = document.getElementById("close-sidebar");
 
 hamburger.addEventListener('click', () => {
     navigationBar.classList.toggle('active');
+    aside.classList.toggle('active');
 });
 
+closeSidebar.onclick =()=> {
+  navigationBar.classList.toggle('active');
+  aside.classList.toggle('active');
+}
 
-//ai js
+
+
+
+
+
+// Ai
+
+
 const submitBtn = document.getElementById("submitBtn");
 const userInput = document.getElementById("userInput");
 const resp = document.getElementById("aiResponse");
@@ -53,7 +69,7 @@ submitBtn.addEventListener("click", async () => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer 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' // Replace with your API key
+      'Authorization': 'Bearer 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' // Replace with your API key
     },
     body: JSON.stringify({
       model: 'gpt-3.5-turbo', // The ChatGPT model
@@ -69,30 +85,7 @@ submitBtn.addEventListener("click", async () => {
   resp.textContent=aiResponse
 
 })
-
-//exercise js
-/*const exerciseSelect = document.getElementById('exercise-select');
-const exerciseImage = document.getElementById('exercise-image');
-
-exerciseSelect.addEventListener('change', () => {
-  const selectedExercise = exerciseSelect.value;
-  switch (selectedExercise) {
-    case 'push-up':
-      exerciseImage.src = 'push_up_image.jpg';
-      break;
-    case 'squat':
-      exerciseImage.src = 'squat_image.jpg';
-      break;
-    case 'plank':
-      exerciseImage.src = 'plank_image.jpg';
-      break;
-    default:
-      exerciseImage.src = '';
-  }
-});
-*/
-
-
+//exercise breathing
 const breathingAnimation = document.getElementById('breathing-animation');
 
   setTimeout(() => {
