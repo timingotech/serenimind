@@ -613,167 +613,97 @@ main .formsec{
 .blog-post.expanded .expanded-content {
   display: block;
 }
+
  /*********Quote***********/
- .consider{
-  display: flex;
-  color: #000000;
-  font-size: 50px;
-  margin-left: 430px;
+.consider{
+  text-align: center;
+  margin-top: 50px;
 }
-.happy{
-  display: flex;
-}
-.happy-display-image{
-  display:inline-flex;
-}
-.happy-display-text{
-  display:flex;
-}
-.happy-mood-button{
+
+ .happy-mood-button{
   margin-left: 100px;
   color: #000000;
   font-size: 30px;
 }
-.happy-image1{
-  margin-left: 60px;
-  width: 350px;
+
+.happy-image{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  margin-left: 10px;
+  text-align: center;
 }
-.happy-image1-text{
-  font-weight: bolder;
-  margin-left: 60px;
+.happy-image p{
+  width: 7cm;
+  margin-left: 70px;
 }
-.happy-image2{
-  margin-left: 60px;
-  width: 350px;
-}
-.happy-image2-text{
-  font-weight: bolder;
-  margin-left: 120px;
-}
-.happy-image3{
-  margin-left: 60px;
-  width: 350px;
-}
-.happy-image3-text{
-  font-weight: bolder;
-  margin-left: 90px;
-}
-.depressed{
-  display: flex;
-}
-.depressed-display-image{
-  display:inline-flex;
-}
-.depressed-display-text{
-  display:flex;
-}
-.depressed-mood-button{
-  margin-left: 100px;
-  color: #000000;
-  font-size: 30px;
-}
-.depressed-image1{
-  margin-left: 60px;
-  width: 350px;
-}
-.depressed-image1-text{
-  font-weight: bolder;
-  margin-left: 60px;
-}
-.depressed-image2{
-  margin-left: 60px;
-  width: 350px;
-}
-.depressed-image2-text{
-  font-weight: bolder;
-  margin-left: 60px;
-}
-.depressed-image3{
-  margin-left: 60px;
-  width: 350px;
-}
-.depressed-image3-text{
-  font-weight: bolder;
-  margin-left: 50px;
-}
-.anxiety{
-  display: flex;
-}
-.anxiety-display-image{
-  display:inline-flex;
-}
-.anxiety-display-text{
-  display:flex;
-}
+.happy-image img{
+  width: 300px;
+  height: 200px;
+  }
+  .depressed-mood-button{
+    margin-left: 100px;
+    color: #000000;
+    font-size: 30px;
+   }
+
+  .depressed-image{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .depressed-image img{
+    width: 300px;
+    height: 200px;
+  }
+  .depressed-image p{
+    width: 7cm;
+    margin-left: 70px;
+  }
+
 .anxiety-mood-button{
   margin-left: 100px;
   color: #000000;
   font-size: 30px;
 }
-.anxiety-image1{
-  margin-left: 60px;
-  width: 350px;
-}
-.anxiety-image1-text{
-  font-weight: bolder;
-  margin-left: 60px;
-}
-.anxiety-image2{
-  margin-left: 60px;
-  width: 350px;
-}
-.anxiety-image2-text{
-  font-weight: bolder;
-  margin-left: 170px;
-}
-.anxiety-image3{
-  margin-left: 60px;
-  width: 350px;
-}
-.anxiety-image3-text{
-  font-weight: bolder;
-  margin-left: 150px;
-}
 
-.anger{
-  display: flex;
-}
-.anger-display-image{
-  display:inline-flex;
-}
-.anger-display-text{
-  display:flex;
-}
+  .anxiety-image{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .anxiety-image img{
+    width: 300px;
+    height: 200px;
+  }
+  .anxiety-image p{
+    width: 7cm;
+    margin-left: 70px;
+  }
 .anger-mood-button{
   margin-left: 100px;
   color: #000000;
   font-size: 30px;
 }
-.anger-image1{
-  margin-left: 60px;
-  width: 350px;
-}
-.anger-image1-text{
-  font-weight: bolder;
-  margin-left: 60px;
-  width: 400px;
-}
-.anger-image2{
-  margin-left: 60px;
-  width: 350px;
-}
-.anger-image2-text{
-  font-weight: bolder;
-  margin-left: 90px;
-}
-.anger-image3{
-  margin-left: 60px;
-  width: 350px;
-}
-.anger-image3-text{
-  font-weight: bolder;
-  margin-left: 150px;
-}
+  .anger-image{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .anger-image img{
+    width: 300px;
+    height: 200px;
+  }
+  .anger-image p{
+    width: 7cm;
+    margin-left: 70px;
+  }
 /**********games*****/
 
 .grid-container {
@@ -1453,4 +1383,49 @@ footer {
 .breathing-animation {
   margin-left: 100px;  
 }
+
+
+.happy-image{
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+  .depressed-image{
+    display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
+
+  .anxiety-image{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .anger-image{
+    display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  .happy-image p{
+  margin-left: 63px;
+}
+
+  .depressed-image p{
+    margin-left: 63px;
+  }
+
+
+  .anxiety-image p{
+    margin-left: 63px;
+
+  }
+
+  .anger-image p{
+    margin-left: 63px;
+
+  }
+  
 }
