@@ -1190,7 +1190,7 @@ footer {
 
 .exercise-container {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .breathing-animation {
@@ -1200,6 +1200,7 @@ footer {
   background-color: green;
   border-radius: 50%;
   animation: breathing 4s infinite alternate ease-in-out;
+  margin-left: 14cm;  
 }
 
 @keyframes breathing {
@@ -1448,5 +1449,8 @@ footer {
 }
 .input-field{
   width: 80%;
+}
+.breathing-animation {
+  margin-left: 100px;  
 }
 }
