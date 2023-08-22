@@ -33,13 +33,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 // Hamburger
+// Add this code to your index.js script or an external JS file
 
-const hamburger = document.querySelector('.hamburger');
-const navigationBar = document.querySelector('.navigation-bar');
+const hamburger = document.querySelector('.hamburger-menu');
+const navigationBar = document.querySelector('.sidebar');
+const aside = document.querySelector('.aside');
+let closeSidebar = document.getElementById("close-sidebar");
 
 hamburger.addEventListener('click', () => {
     navigationBar.classList.toggle('active');
+    aside.classList.toggle('active');
 });
+
+closeSidebar.onclick =()=> {
+  navigationBar.classList.toggle('active');
+  aside.classList.toggle('active');
+}
+
+
+
+
+
+
 // Ai
 
 

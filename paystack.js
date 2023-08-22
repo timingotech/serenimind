@@ -19,3 +19,21 @@ document.getElementById('payment-form').addEventListener('submit', function(even
         }
     }).openIframe();
 });
+// Hamburger
+
+const hamburger = document.querySelector('.hamburger-menu');
+const navigationBar = document.querySelector('.sidebar');
+const aside = document.querySelector('.aside');
+let closeSidebar = document.getElementById("close-sidebar");
+
+hamburger.addEventListener('click', () => {
+    navigationBar.classList.toggle('active');
+    aside.classList.toggle('active');
+});
+
+closeSidebar.onclick =()=> {
+  navigationBar.classList.toggle('active');
+  aside.classList.toggle('active');
+}
+
+

@@ -1006,7 +1006,183 @@ footer {
   .onlyshowinsmall{
     display: none;
   }
+.checkbox {
+  color:green;
+}
+.forgot-password{
+  color: green;
+  margin-top: 70px;
+}
 
+.forgot-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.logoo {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.description {
+  margin-top: 10px;
+  color: #888888;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #34a534;
+}
+/******verification********/
+.verification-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+
+.description {
+  margin-top: 10px;
+  color: #888888;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #34a534;
+}
+/* SIDEBAR */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(0,0,0,0.7);
+  transition: 0s;
+}
+
+.sidebar button {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  color: green
+}
+
+.sidebar h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.aside {
+  position: absolute;
+  right: -100%;
+  width: 65%;
+  height: 100%;
+  background: white;
+  padding: 20px;
+  padding-top: 10px;
+  transition: 0.2s;
+  /* z-index: 3; */
+}
+
+.sidebar ul {
+  margin-top: 20px;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.sidebar ul li {
+  display: grid;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #dfdfdf;
+}
+
+.sidebar ul li a {
+  width: 100%;
+}
+
+.sidebar .dropdown a {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.sidebar .dropdown-content {
+  display: block;
+  position: unset;
+  z-index: unset;
+  line-height: 0.3;
+  box-shadow: unset;
+  padding-top: 5px;
+}
+
+.sidebar .dropdown-content a {
+  font-size: 17px;
+}
+
+.sidebar.active {
+  right: 0;
+} 
+
+.aside.active {
+  right: 0;
+}
 /* Add this code to your index.css stylesheet */
 
 @media screen and (max-width: 765px) {
