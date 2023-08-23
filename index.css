@@ -1204,7 +1204,9 @@ footer {
 .navigation-bar {
   display: none;
 }
-
+.lastletter{
+  margin-right: -30px;
+}
 .login-button {
     padding: 5px 10px;
 }

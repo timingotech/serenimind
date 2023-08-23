@@ -91,3 +91,51 @@ const breathingAnimation = document.getElementById('breathing-animation');
   setTimeout(() => {
     breathingAnimation.style.animationPlayState = 'paused';
   }, 8000); // 8 seconds total for inhaling and exhaling
+
+  //login
+  document.addEventListener('DOMContentLoaded', () => {
+    const signupForm = document.getElementById('signupForm');
+    const loginForm = document.getElementById('loginForm');
+
+    signupForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(signupForm);
+        try {
+            const response = await fetch('/signup', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.ok) {
+                alert('Signup successful');
+                // Redirect to login page
+                window.location.href = '/login.html';
+            } else {
+                alert('Signup request failed');
+                // Handle errors (display error messages, etc.)
+            }
+        } catch (error) {
+            alert('An error occurred:', error);
+        }
+    });
+
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(loginForm);
+        try {
+            const response = await fetch('/login', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.ok) {
+                alert('Login successful');
+                // Redirect to index page
+                window.location.href = '/index.html';
+            } else {
+                alert('Login request failed');
+                // Handle errors (display error messages, etc.)
+            }
+        } catch (error) {
+            alert('An error occurred:', error);
+        }
+    });
+});
